@@ -1,6 +1,19 @@
 ## 代码作用
 生成可训练的YOLO数据集
 
+```
+# ├── datasets
+#     └── mydata
+#         └── train
+#             └── images
+#             └── labels
+#         └── val
+#             └── images
+#             └── labels
+#         └── test
+```
+
+
 ## 代码使用方法
 
 使用labelImg软件，标注自制数据集，并且将 images文件 和 labels文件存放在 nailong_data 文件夹中。
