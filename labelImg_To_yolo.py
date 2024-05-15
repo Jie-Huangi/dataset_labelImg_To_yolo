@@ -86,7 +86,7 @@ def has_objects(annotation_path):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--data', default='./nailong_data')  # 数据集Images路径
+    parser.add_argument('--data', default='./enhanced_data')  # 数据集Images路径
     parser.add_argument('--save', default='./mydata')  # 保存路径
     parser.add_argument('--images_suffix', default=['jpg', 'png', 'jpeg'], help='images suffix')  # 图片后缀名
 
@@ -95,7 +95,7 @@ if __name__ == "__main__":
     split_dataset_into_train_val_test(
         dataset_dir=opt.data,
         save_dir=opt.save,
-        train_ratio=0.8,
-        val_ratio=0.2,
+        train_ratio=0.9,
+        val_ratio=0.1,
         im_suffix=opt.images_suffix
     )
